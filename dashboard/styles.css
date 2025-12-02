@@ -1,0 +1,88 @@
+/* Extracted styles from dashboard/index.html */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f8fa;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 2em;
+}
+h1, h2 {
+    color: #222;
+    margin-top: 0;
+}
+.section {
+    margin-bottom: 2em;
+}
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1em;
+}
+.job-card {
+    background: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    padding: 1em 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.job-id {
+    font-size: 0.95em;
+    color: #888;
+    word-break: break-all;
+}
+.badge {
+    display: inline-block;
+    padding: 0.2em 0.7em;
+    border-radius: 12px;
+    font-size: 0.95em;
+    font-weight: 500;
+    margin-right: 0.5em;
+}
+.pending { background: #fff7e6; color: #b26a00; }
+.running { background: #e6f0ff; color: #0052cc; }
+.done { background: #e6ffed; color: #00875a; }
+.failed { background: #ffe6e6; color: #de350b; }
+.dlq-reason {
+    font-size: 0.95em;
+    color: #de350b;
+}
+.count {
+    font-size: 1em;
+    color: #666;
+    margin-left: 0.5em;
+}
+.loading {
+    text-align: center;
+    color: #888;
+    margin: 2em 0;
+}
+/* Submission form styles */
+.submit-form {
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+.submit-form label { display: block; font-size: 0.9em; color: #444; }
+.submit-form input, .submit-form textarea { width: 100%; padding: 0.5em; border-radius: 6px; border: 1px solid #e0e0e0; font-family: monospace; }
+.submit-actions { grid-column: 1 / -1; display:flex; gap:0.5em; align-items:center; }
+.submit-result { font-size: 0.95em; color: #333; }
+.login-box { max-width: 420px; margin: 0 auto; }
+.hidden { display: none; }
+.top-actions { display:flex; justify-content:flex-end; gap:1em; align-items:center; }
+.btn-link { background: none; border: none; color: #0052cc; cursor:pointer; text-decoration: underline; font-size: 0.95em; }
+@media (max-width: 600px) {
+    .container { padding: 1em; }
+    .job-list { grid-template-columns: 1fr; }
+    .submit-form { grid-template-columns: 1fr; }
+}
+
