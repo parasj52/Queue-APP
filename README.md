@@ -34,5 +34,7 @@ A prototype distributed job queue system with REST API, worker process, SQLite p
 
 ![Screenshot](resource/LoginPage.png)
 
-![Screenshot](resource/Dashboard.png)
+![Screenshot](resource/Dashboard.png)t
+
+![Screenshot](resource/DashboardWithDLQ.png)
 
